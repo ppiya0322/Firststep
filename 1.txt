@@ -1,0 +1,47 @@
+HTML: Hypertext Markup Language
+
+TAG: <strong></strong> 등 사이에 있는 것을 설명하는 것이 태그.
+
+<u></u>태그는 밑줄을 넣는 태그.
+
+<h1~6></h1~6>태그는 제목을 나타내는 태그.
+줄바꿈, 텍스트 크기 조절, 진하게 표시됨.
+숫자가 커질수록 작아짐
+
+<br> 줄바꾸는 태그.
+
+<p></p> 단락을 구분하는 태그.
+
+style="margin-top:25px;" CSS언어에서 쓰이는 문법. 상단의 공백을 ~픽셀만큼 둠.
+
+<img src="~.jpg" width="~%"> 이미지를 삽입하는 태그, src width 위치는 상관없음
+
+각 줄마다 동일한 태그를 넣을 때 Ctrl+각 줄 클릭하면 동시에 입력 및 지우기 가능
+tap키는 들여쓰기 기능을 해줌
+
+<li></li> 리스트를 표현해주는 태그.
+  List
+<ul></ul> 리스트를 묶어주는 태그.
+  Unordered List
+<ol></ol> 리스트에 번호를 자동으로 추가해주는 태그.
+  Ordered List
+
+<table></table> 표를 표현해주는 태그.
+<tr></tr> 표에 한 행을 표현해주는 태그.
+<td></td> 표에 각 칸을 표현해주는 태그.
+
+<title></title> 웹페이지의 제목을 정해주는 태그.
+<meta charset="utf-8"> 해당 웹페이지를 utf-8로 읽어라는 명령문.
+
+<a></a> 링크를 걸어주는 태그.
+  <a href="주소"></a> <ㅡ h=hypertext, ref=참조 레퍼런스
+  <a href="주소" target="_blank"></a> <ㅡ 새탭으로 열림
+  <a href="주소" target="_blank" title="~"></a> <ㅡ 마우스를 올렸을 때 툴팁이 뜸
+html의 전체구성
+<!doctype html> <ㅡ 해당문서는 html로 작성되었다는 일종의 약속적 문장
+<html>
+  <head>
+  </head>
+  <body>
+  </body>
+</html>
