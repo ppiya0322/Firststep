@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      /*
+      block level element
+      */
+      h1{
+        border-width:5px;
+        border-color:red;
+        border-style:solid;
+        /*
+        display:inline; <ㅡ 하게 되면 inline element가 됨
+        */
+      }
+      /*
+      inline element
+      */
+      a{
+        border-width:5px;
+        border-color:red;
+        border-style:solid;
+        /*
+        display:block; <ㅡ 하게 되면 block level element가 됨
+        */
+        /*
+        display:none; <ㅡ 화면에서 숨겨짐
+        */
+      }
+      h1, a{
+        border:5px solid red;
+      }
+      /*
+      위와 같이 해주면 중복을 제거할 수 있다. 5px solid red의 순서는 무관
+      */
+    </style>
+  </head>
+  <body>
+    <h1>CSS</h1>Cascading Style Sheets (<a href="https://ko.wikipedia.org/wiki/CSS">CSS</a>) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.[1] CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+  <title>토끼는 귀여워</title>
+  <meta charset="utf-8">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BMVR93E5BC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-BMVR93E5BC');
+  </script>
+  <style>
+    body{
+      margin:0;
+    }
+    a {
+      color:black;
+      text-decoration: none;
+    }
+    h1 {
+      font-size: 60px;
+      text-align: center;
+      border-bottom:1px solid gray;
+      margin:0;
+      padding:20px;
+    }
+    ol{
+      border-right:1px solid gray;
+      font-size: 25px;
+      width:80px;
+      margin:0;
+      padding:70px;
+    }
+    #grid{
+      display: grid;
+      grid-template-columns: 250px 1fr;
+    }
+    #grid ol{
+      padding-left:1px;
+    }
+    #grid #article{
+      padding-left:1px;
+    }
+    @media(max-width:800px){
+      #grid{
+        display:block; /*grid타입에서 block타입으로 되면서 밑으로 내려옴*/
+      }
+      ol{
+        border-right:none; /*선을 제거*/
+      }
+      h1 {
+        border-bottom:none; /*선을 제거*/
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1><a href="index.병아리와 토끼.html">병아리와 토끼</a></h1>
+  <div id="grid">
+    <ol>
+      <li><a href="병아리.html">병아리</a></li>
+      <li><a href="병아리.html">꼬끼오</a></li>
+      <li><a href="토끼.html">토끼</a></li>
+    </ol>
+    <div id="article">
+      <h2>토끼는 귀엽습니다</h2>
+      <p><a href="https://namu.wiki/w/%ED%86%A0%EB%81%BC" target="_blank" title="토끼 소개, 나무위키">
+        토끼</a>는 대체적으로 긴 귀와 짧은 꼬리를 가지며, 앞다리보다 훨씬 긴 뒷다리를 써서 <strong><u>깡총깡총</u></strong> 뛰어다닙니다.
+      <br><u>토끼</u>는 입과 코는 작으며, 입모양이 'ㅅ'모양, 얼굴은 약간 달걀형에 가깝습니다.</p>
+      <img src="토끼.jpg" width="25%">
+      <p style="margin-top:25px;">산토끼를 직접 보면 우리가 아는 토끼와는 큰 괴리감을 느낄 수 있습니다.<br>
+      귀가 훨씬 크고 몸에 비해 머리가 작은 편이며 다리가 집토끼보다 훨씬 길어, <br>
+      적을 만났을 때 재빨리 도망치기에 적합한 모양새를 가지고 있습니다.<br>
+      얼굴이 길어 눈이 작아보이고 동공의 크기가 집토끼보다 훨씬 작아 얼굴만 봐도 귀엽다는 느낌은 거의 나지 않습니다.</p>
+      <p>
+      <p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/zpLZouI06yk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </p>
+    </div>
+</div>
+
+  <div id="disqus_thread"></div>
+  <script>
+      /**
+      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+      /*
+      var disqus_config = function () {
+      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      */
+      (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://chicken-and-rabbit.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</p>
+</body>
+</html>
