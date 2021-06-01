@@ -47,3 +47,44 @@ alert("~~~~"+name+"~~~~" x100)이라고 했을 때 name = 'leezche';라고 바�
 변수를 사용할 때는 var를 앞에다 써줌(변수다!)
 
 ex3.html을 통해서 egoing example.html을 만들어보자
+body태그를 동적으로 스타일을 꾸며보고자 함. 자바스크립트가 body태그를 선택하도록 해야함. javascript select tag by css selector라고 검색, MDN 열기 누르면 document.querySelector('')라는게 나온다. document.querySelector('body')를 입력하고 스타일 태그를 어떻게 JS에 넣을지를 고민해봐야함. javascript element style검색해보고 document.querySelector('body').style. 입력. CSS에선 <body style="background-color:black;">인데 js에서는 .backgroundColor='black';임 그냥 color라고 넣으면 텍스트 컬러가 되므로 'white'를 입력해주고 day 영역에는 반대로 white black을 넣어주면 완성.
+
+컴퓨터 언어와 프로그래밍 언어는 다름. 프로그램은 순서에 따라 진행되는 것을 뜻하는데 HTML은 입력한 것을 보여주기만 하면 되지만 JS는 입력한 순서에 따라 처리해야 하기 때문에 컴퓨터 언어이면서 동시에 프로그래밍 언어이기도 함.
+
+조건문(Conditional statement) <ex4.html>참고
+비교 연산자(===)와 블리언(true & false)
+지금까지 배운 데이터타입: Number, String, Boolean
+html에서 '<' 기호는  '&lt;'과 같다. '>'기호는 '&gt;'와 같음
+<ex5.html>참고
+if, else에서 해당 조건이 충족되면 if 조건은 출력되지만 else 조건은 무시되고
+반대로 불충족되면 if 조건이 무시되고 else조건이 출력된다.
+<ex3.html>참고
+night day를 원버튼으로 만들어보자. javascript element get value 검색
+document.querySelector('#night_day').value를 이용해서 night_day인 id값에 value를 가지고 올 수 있음. 클릭 할때마다 바뀌어야 하기때문에 document.querySelector('#night_day').value = 'day';를 추가해줘야 원버튼으로 바뀌게 된다.
+
+리팩토링 중복의 제거
+중복되는 코드를 제거하는 작업을 리팩토링이라고 함.
+<ex6.html>참고
+아래쪽에도 night_day 버튼을 만들고 싶어서 복사 붙여넣기를 하면 기능은 작동하지만 night day라는 글자가 바뀌질 않는다. 이런 문제를 해결하기 위해서는 night_day말고 다른 이름으로 지정해줘야하는데 이러한 작업이 수백개가되면 굉장히 곤란해질 수 있다.
+document.querySelector('#night_day2')는 사실상 자기 자신을 가르키는 것이므로
+this.value === 'night'로 바꿔줄 수 있다.
+document.querySelector('body').style.backgroundColor = 'black';
+document.querySelector('body').style.color = 'white';
+document.querySelector('body')가 중복되므로 중복을 제거해보자
+var target = document.querySelector('body');를 상단에 넣고
+document.querySelector('body')을 target으로 바꾸면 된다.
+
+배열(Array)
+수 많은 데이터 중에서 연관된 데이터를 정리정돈해서 담아두는 수납상자라고 생각하자.
+문자열은"", 배열은[]안에 들어가고 많은 것을 적을 수 있다. 값과 값사이에는 ,로 구분
+Array.html 참고
+      var coworkers = ["egoing", "leezche"];  형태로 배열에 데이터를 넣을 수 있고
+      document.write(coworkers[0]);
+      document.write(coworkers[1]); 형태로 데이터를 쓸 수 있다.
+javascript array count 검색해보면 .length;하면 셀 수 있다는 정보를 확인.
+추가적인 정보를 넣고싶다?
+javascript Array add data 검색해보면 .push;로 가능하다는 것을 확인
+      coworkers.push('duru');
+      coworkers.push('teaho');
+
+반복문
